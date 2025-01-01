@@ -1,0 +1,177 @@
+.game-wrapper{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-wrapper .battle-wrapper{
+   
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+   
+    width: 50%;
+   
+}
+.game-wrapper .action{
+    width: 180px;
+    height: 180px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+  
+}
+.game-wrapper .right-side, .left-side{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.game-wrapper .label{
+    text-align: center;
+    color: white
+}
+.game-wrapper .result{
+    color: white;
+    display: flex;
+    font-weight: bolder;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-wrapper .playBtn{
+    
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+.game-wrapper .actions-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.game-wrapper .actions-wrapper div{
+    font-size: 5rem;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-wrapper .actions-wrapper div:hover{
+    background-color: rgb(56, 56, 56);
+}
+.game-wrapper .actions-wrapper div:active{
+    background-color: red;
+}
+.game-wrapper .score{
+    color: white;
+}
+.game-wrapper .score-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.game-wrapper .left-side .action{
+    transform: rotate(90deg);
+}
+.game-wrapper .right-side .action{
+    transform: rotate(270deg);
+}
+.game-wrapper .left-side .animated2{
+    /* animation: shake 2s infinite; */
+   
+   
+ 
+    animation: shake2 1s infinite;
+}
+.game-wrapper .right-side .animated1{
+    animation: shake 1s infinite;
+    transform: rotate(270deg);
+}
+@keyframes shake2{
+    0%{
+        transform: rotate(90deg);
+    }
+  
+    20%{
+        transform: rotate(90deg);
+    }
+  
+    40%{
+        transform: rotate(110deg);
+    }
+  
+    60%{
+        transform: rotate(90deg);
+    }
+   
+    80%{
+        transform: rotate(110deg);
+    }
+   
+    100%{
+        transform: rotate(90def);
+    }
+}
+@keyframes shake{
+    0%{
+        transform: rotate(270deg);
+    }
+  
+    20%{
+        transform: rotate(270deg);
+    }
+  
+    40%{
+        transform: rotate(250deg);
+    }
+  
+    60%{
+        transform: rotate(270deg);
+    }
+   
+    80%{
+        transform: rotate(250deg);
+    }
+   
+    100%{
+        transform: rotate(270deg);
+    }
+}
+
+.game-wrapper .resetBtn{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.game-wrapper .resetBtn:hover{
+    background-color: rgb(87, 86, 86);
+}
+.game-wrapper .resetBtn:active{
+    background-color: red;
+}
